@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-image: url('../img/fondo.jpg' ); /* Ruta relativa a la carpeta de imágenes */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* La imagen se centra */
+    background-attachment: fixed; /* La imagen no se mueve al hacer scroll */
+    min-height: 100vh; /* Altura mínima de la pantalla completa */
+    display: flex; /* Usamos flexbox para centrar */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    justify-content: center; /* Centrar todo el contenido */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Alinea el texto del título en el centro */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 100%; /* Asegura que el formulario ocupe el 100% del contenedor */
+}
+
+/* Estilo de las etiquetas */
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los inputs, selects y textarea */
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #218838;
+}
